@@ -7,3 +7,6 @@ go to nvim/lua/abbas/lsp/mason and add the name of your language server to the t
 TO ADD THE HACK FONT, GO TO THEIRE REOP:
 https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
 DOWNLOAD IT, DOUBLE CLICK ON IT, AND CLICK INSTALL.
+
+Install xclip to make nvim able to copy things to clipboard:
+sudo apt-get install xclip 

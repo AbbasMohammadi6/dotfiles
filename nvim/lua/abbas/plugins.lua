@@ -51,12 +51,11 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
-  use 'kyazdani42/nvim-tree.lua'
 
   -- Comment all languages
   use 'numToStr/Comment.nvim'
 
-  -- This is neccessary to make Comment.nvim work for jsx
+  -- This is neccessary to make Comment.nvim work for jsx 
   use 'JoosepAlviste/nvim-ts-context-commentstring'
 
   -- Colorschemes
@@ -98,7 +97,7 @@ return packer.startup(function(use)
 
   -- Bufferline
   use "akinsho/bufferline.nvim"
-  use "moll/vim-bbye" -- this will keep you in nvim event if there is no buffers ope
+  use "moll/vim-bbye" -- this will keep you in nvim even if there is no buffers open
 
   -- lualine
   use "nvim-lualine/lualine.nvim"

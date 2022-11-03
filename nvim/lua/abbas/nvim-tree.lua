@@ -40,15 +40,15 @@ nvim_tree.setup {
         ignore_list = {},
     },
     git = {
-        enable = true,
-        ignore = true,
+        enable = false,
+        ignore = false,
         timeout = 500,
     },
     view = {
         width = 30,
         -- height = 30,
         hide_root_folder = false,
-        side = "left",
+        side = "right",
         -- auto_resize = true,
         mappings = {
             custom_only = false,
@@ -58,8 +58,8 @@ nvim_tree.setup {
             { key = "v", cb = tree_cb "vsplit" },
             },
         },
-        number = false,
-        relativenumber = false,
+        number = true,
+        relativenumber = true,
     },
     actions = {
         -- quit_on_open = true,
