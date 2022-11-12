@@ -50,7 +50,7 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use 'kyazdani42/nvim-web-devicons'
-  use 'kyazdani42/nvim-tree.lua'
+  --use 'kyazdani42/nvim-tree.lua'
 
   -- Comment all languages
   use 'numToStr/Comment.nvim'
@@ -84,6 +84,8 @@ return packer.startup(function(use)
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
+  use "nvim-telescope/telescope-file-browser.nvim"
+
 
   -- Treesitter
   use {

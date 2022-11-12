@@ -26,7 +26,7 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
-keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+-- keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
@@ -72,15 +72,25 @@ keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
--- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
--- removing the previwer
+
+-- search even in folders that are in .gitignore
 keymap(
 	"n",
 	"<leader>f",
-	"<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>",
+	"<cmd>lua require'telescope.builtin'.find_files({no_ignore=true})<cr>",
 	opts
 )
-keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
+
+-- search for a word, accross current working directory (cwd)
+keymap("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)
 
 -- formatting
 keymap("n", "=", "<cmd>lua vim.lsp.buf.format()<cr>", opts)
+
+-- open telescope-file-browser
+vim.api.nvim_set_keymap(
+	"n",
+	"<space>e",
+	"<cmd>lua require 'telescope'.extensions.file_browser.file_browser({path='%:p:h', depth=1})<CR>",
+	opts
+)
