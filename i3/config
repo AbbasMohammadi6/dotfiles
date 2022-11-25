@@ -210,3 +210,6 @@ client.background       #ffffff
 # hiding title bars by making them very small.
 default_border pixel 1
 default_floating_border pixel 1
+
+# making the background opacity work.
+exec_always picom
