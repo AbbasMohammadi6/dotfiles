@@ -6,3 +6,6 @@ https://github.com/tobi-wan-kenobi/bumblebee-status
 Install feh:
 sudo apt-get update -y
 sudo apt-get install -y feh
+
+To make terminal window transparent you need to install 'picom':
+sudo apt install picom

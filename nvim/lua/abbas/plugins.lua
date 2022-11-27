@@ -103,6 +103,9 @@ return packer.startup(function(use)
   -- lualine
   use "nvim-lualine/lualine.nvim"
 
+  -- make nvim transparent
+  use "xiyaowong/nvim-transparent"
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
