@@ -1,11 +1,11 @@
 
 local servers = {
 	"sumneko_lua",
-	"pyright",
 	"jsonls",
   "tsserver",
   "cssls",
   "cssmodules_ls",
+  "tailwindcss",
 }
 
 local settings = {
