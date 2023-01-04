@@ -42,6 +42,8 @@ keymap("n", "<leader>h", ":bprevious<CR>", opts)
 -- More through lines
 keymap("n", "<S-l>", "$", opts)
 keymap("n", "<S-h>", "^", opts)
+keymap("v", "<S-l>", "$", opts)
+keymap("v", "<S-h>", "^", opts)
 
 -- Insert --
 -- Press jk fast to enter

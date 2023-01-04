@@ -55,7 +55,7 @@ return packer.startup(function(use)
   -- Comment all languages
   use 'numToStr/Comment.nvim'
 
-  -- This is neccessary to make Comment.nvim work for jsx 
+  -- This is neccessary to make Comment.nvim work for jsx
   use 'JoosepAlviste/nvim-ts-context-commentstring'
 
   -- Colorschemes
@@ -76,11 +76,11 @@ return packer.startup(function(use)
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use for all languages
 
-	-- LSP
+  -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/mason.nvim" -- simple to use language server installer
   use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
-	use { "jose-elias-alvarez/null-ls.nvim" } -- for formatters and linters
+  use { "jose-elias-alvarez/null-ls.nvim" } -- for formatters and linters
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"

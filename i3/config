@@ -196,7 +196,7 @@ bar {
 
 # adding Farsi keyboard
 exec_always "setxkbmap -layout us,ir -variant ,, -option grp:win_space_toggle"
-exec_always feh --bg-scale ~/Downloads/wallpaper.png
+exec_always feh --bg-scale --scale-down ~/Downloads/wallpaper.png
 
 
 # class                 border  backgr. text    indicator child_border
