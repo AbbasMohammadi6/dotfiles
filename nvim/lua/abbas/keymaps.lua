@@ -89,6 +89,9 @@ keymap("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)
 -- formatting
 keymap("n", "=", "<cmd>lua vim.lsp.buf.format()<cr>", opts)
 
+-- close buffer
+keymap("n", "<leader>;", ":bd<Enter>", opts)
+
 -- open telescope-file-browser
 vim.api.nvim_set_keymap(
 	"n",
