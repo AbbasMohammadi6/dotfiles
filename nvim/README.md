@@ -10,3 +10,6 @@ DOWNLOAD IT, DOUBLE CLICK ON IT, AND CLICK INSTALL.
 
 Install xclip to make nvim able to copy things to clipboard:
 sudo apt-get install xclip 
+
+In order to make search in files work, the `ripgrep` package should be installed.
+https://github.com/BurntSushi/ripgrep

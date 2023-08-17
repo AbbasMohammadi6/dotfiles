@@ -187,9 +187,7 @@ bindsym $mod+r mode "resize"
 
 bar {
 # first clone or download the code and put it somewhere, and add the address here
-	#status_command ~/bumblebee-status-main/bumblebee-status -m cpu memory battery time \
-		#pasink pasource -p time.format="%H:%M" -t greyish-powerline
-	status_command ~/bumblebee-status-main/bumblebee-status -m memory battery time \
+	status_command ~/bumblebee-status-main/bumblebee-status -m memory battery time redshift \
 		pasink pasource -p time.format="%H:%M" -t greyish-powerline
   position top
 }

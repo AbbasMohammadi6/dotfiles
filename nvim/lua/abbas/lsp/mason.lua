@@ -1,11 +1,12 @@
 
 local servers = {
-	"sumneko_lua",
+	"lua_ls",
 	"jsonls",
   "tsserver",
   "cssls",
   "cssmodules_ls",
   "tailwindcss",
+  "rust_analyzer",
 }
 
 local settings = {
