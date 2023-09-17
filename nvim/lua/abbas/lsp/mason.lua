@@ -7,6 +7,7 @@ local servers = {
   "cssmodules_ls",
   "tailwindcss",
   "rust_analyzer",
+  "prismals",
 }
 
 local settings = {
