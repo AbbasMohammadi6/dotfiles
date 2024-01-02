@@ -211,3 +211,6 @@ default_floating_border pixel 1
 
 # making the background opacity work.
 exec_always picom
+
+# adding the battery popup
+exec --no-startup-id i3-battery-popup -L 16 -s ~/i3-battery-popup.wav
