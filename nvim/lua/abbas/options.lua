@@ -37,6 +37,7 @@ vim.opt.scrolloff = 8                           -- is one of my fav
 vim.opt.sidescrolloff = 8
 vim.opt.guifont = "monospace:h17"               -- the font used in graphical neovim applications
 vim.opt.colorcolumn = "120"
+vim.opt.termbidi = true
 
 vim.cmd[[au TextYankPost * silent! lua vim.highlight.on_yank({ timeout = 200 })]] --  heighlight the yanked text (see :h lua-hightlight)
 
