@@ -1,0 +1,13 @@
+[font]
+size = 13.0
+
+[font.normal]
+family = "Hack Nerd Font"
+style = "Regular"
+
+[window]
+opacity = 0.8
+
+[window.padding]
+x = 5
+y = 5

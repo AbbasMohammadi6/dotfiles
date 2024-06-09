@@ -91,7 +91,7 @@ return packer.startup(function(use)
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   }
-  use "p00f/nvim-ts-rainbow" -- colorfull brackets, paranthesis, etc.
+  -- use "p00f/nvim-ts-rainbow" -- colorfull brackets, paranthesis, etc.
 
   --Autopairs
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
