@@ -185,16 +185,13 @@ bindsym $mod+r mode "resize"
 ### MY CONFIG
 #############################
 
-# bar {
-# first clone or download the code and put it somewhere, and add the address here
-#	status_command ~/bumblebee-status-main/bumblebee-status -m memory battery time redshift \
-#		pasink pasource -p time.format="%H:%M" -t greyish-powerline
-  #position top
-#}
-
 bar {
-	position top
+# first clone or download the code and put it somewhere, and add the address here
+  status_command bumblebee-status -m memory battery time redshift \
+	pasink pasource -p time.format="%H:%M" -t greyish-powerline
+  position top
 }
+
 
 # adding Farsi keyboard
 exec_always "setxkbmap -layout us,ir -variant ,, -option grp:win_space_toggle"
