@@ -6,7 +6,7 @@ window:
 
 font:
   normal:
-    family: Hack Nerd Font
+    family: HackNerdFontMono
     style: Regular
   size: 11.0
 
