@@ -16,3 +16,16 @@ sudo apt-get install xclip
 
 In order to make search in files work, the `ripgrep` package should be installed.
 https://github.com/BurntSushi/ripgrep
+
+How to add styled components support:
+npm install --save-dev typescript-styled-plugin
+add a plugins section to your tsconfig.json
+{
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin"
+      }
+    ]
+  }
+}
