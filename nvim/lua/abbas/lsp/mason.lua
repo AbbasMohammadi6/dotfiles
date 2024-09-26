@@ -8,6 +8,7 @@ local servers = {
   "tailwindcss",
   "rust_analyzer",
   "prismals",
+  "emmet_language_server",
 }
 
 local settings = {
