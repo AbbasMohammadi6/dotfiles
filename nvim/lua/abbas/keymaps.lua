@@ -77,10 +77,10 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 -- search even in folders that are in .gitignore
 keymap(
-	"n",
-	"<leader>f",
-	"<cmd>lua require'telescope.builtin'.find_files({no_ignore=true})<cr>",
-	opts
+  "n",
+  "<leader>f",
+  "<cmd>lua require'telescope.builtin'.find_files({no_ignore=true})<cr>",
+  opts
 )
 
 -- search for a word, accross current working directory (cwd)
@@ -94,8 +94,10 @@ keymap("n", "<leader>;", ":bd<Enter>", opts)
 
 -- open telescope-file-browser
 vim.api.nvim_set_keymap(
-	"n",
-	"<space>e",
-	"<cmd>lua require 'telescope'.extensions.file_browser.file_browser({path='%:p:h', depth=1})<CR>",
-	opts
+  "n",
+  "<space>e",
+  "<cmd>lua require 'telescope'.extensions.file_browser.file_browser({path='%:p:h', depth=1})<CR>",
+  opts
 )
+
+keymap("n", "<leader>z", "<cmd>LazyGit<cr>", opts)
