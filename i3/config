@@ -13,7 +13,7 @@ set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:hack 10
+font pango:HackNerdFont 10
 #font pango:monospace 8
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -46,7 +46,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec konsole
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -187,7 +187,7 @@ bindsym $mod+r mode "resize"
 
 bar {
 # first clone or download the code and put it somewhere, and add the address here
-	status_command ~/bumblebee-status-main/bumblebee-status -m memory battery time redshift \
+	status_command bumblebee-status -m memory battery time redshift \
 		# pasink pasource -p time.format="%H:%M" -t greyish-powerline
   position top
 }
