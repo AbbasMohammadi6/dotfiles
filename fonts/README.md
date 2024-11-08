@@ -1,8 +1,9 @@
-Create this file:
-~/.config/fontconfig/fonts.conf
+Create this file:\
+`~/.config/fontconfig/fonts.conf`
 
 and put this inside it:
 
+```xml
 <?xml version='1.0'?>
 <!DOCTYPE fontconfig SYSTEM 'fonts.dtd'>
 <fontconfig>
@@ -18,16 +19,15 @@ and put this inside it:
  <dir>/usr/share/fonts/</dir>
 
 </fontconfig>
+```
 
-/////////////////
 
-All your nerd font file names should start with "HackNerdFont", like this:
-HackNerdFont-Bold.ttf
-And all your vazi fonts should be like this:
-Vazirmatn-Black.ttf
+All your nerd font file names should start with "HackNerdFont", like this: \
+`HackNerdFont-Bold.ttf`\
+And all your vazir fonts should be like this:\
+`Vazirmatn-Black.ttf`
 
-////////////////
 
-For i3 you should have this config:
-font pango:HackNerdFont 10
-and this adds all icons in bumblebee and neovim
+For i3 you should have this config:\
+`font pango:HackNerdFont 10`\
+and this adds all icons in bumblebee and neovim\
