@@ -31,3 +31,5 @@ And all your vazir fonts should be like this:\
 For i3 you should have this config:\
 `font pango:HackNerdFont 10`\
 and this adds all icons in bumblebee and neovim\
+
+Don't forget to change your terminal font to `Hack`
