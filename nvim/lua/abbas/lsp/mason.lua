@@ -2,13 +2,14 @@
 local servers = {
 	"lua_ls",
 	"jsonls",
-  "tsserver",
+  "ts_ls",
   "cssls",
   "cssmodules_ls",
   "tailwindcss",
   "rust_analyzer",
   "prismals",
   "emmet_language_server",
+  "bashls",
 }
 
 local settings = {
