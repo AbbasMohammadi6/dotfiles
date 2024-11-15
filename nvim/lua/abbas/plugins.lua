@@ -104,7 +104,7 @@ return packer.startup(function(use)
   use "nvim-lualine/lualine.nvim"
 
   -- make nvim transparent
-  use "xiyaowong/nvim-transparent"
+  -- use "xiyaowong/nvim-transparent"
 
   use "tpope/vim-fugitive"
 
