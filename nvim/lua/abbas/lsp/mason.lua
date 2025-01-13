@@ -10,6 +10,7 @@ local servers = {
   "prismals",
   "emmet_language_server",
   "bashls",
+  "gopls",
 }
 
 local settings = {
