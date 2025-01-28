@@ -12,6 +12,7 @@ and put this inside it:
   <edit mode="prepend" name="family">
    <string>HackNerdFont</string>
    <string>Vazirmatn</string>
+   <string>NotoColorEmoji</string>
   </edit>
  </match>
 
@@ -27,9 +28,24 @@ All your nerd font file names should start with "HackNerdFont", like this: \
 And all your vazir fonts should be like this:\
 `Vazirmatn-Black.ttf`
 
+Don't forget to change your terminal font to `Hack`
 
 For i3 you should have this config:\
 `font pango:HackNerdFont 10`\
 and this adds all icons in bumblebee and neovim\
 
-Don't forget to change your terminal font to `Hack`
+--------------
+
+for emojis install this font:
+```bash
+sudo pacman -S noto-fonts-emoji
+```
+and then move the font from here
+```bash
+/usr/share/fonts/noto
+```
+to here:
+```bash
+/usr/share/fonts/noto
+```
+(the noto font was added in the above fonts.conf)
