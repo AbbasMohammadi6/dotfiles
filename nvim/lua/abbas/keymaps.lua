@@ -46,8 +46,9 @@ keymap("v", "<S-l>", "$", opts)
 keymap("v", "<S-h>", "^", opts)
 
 -- Insert --
--- Press jk fast to enter
+-- Press jk or kj fast to enter
 keymap("i", "jk", "<ESC>", opts)
+keymap("i", "kj", "<ESC>", opts)
 
 -- Visual --
 -- Stay in indent mode
