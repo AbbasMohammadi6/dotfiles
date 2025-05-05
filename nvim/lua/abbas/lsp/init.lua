@@ -5,5 +5,5 @@ end
 
 require "abbas.lsp.mason"
 require("abbas.lsp.handlers").setup()
-require "abbas.lsp.null-ls"
+require "abbas.lsp.none-ls"
 require "abbas.lsp.settings.tsserver"
