@@ -216,4 +216,10 @@ default_floating_border pixel 1
 exec --no-startup-id i3-battery-popup -L 16 -s ~/i3-battery-popup.wav
 
 # monitors
-exec --no-startup-id xrandr --output HDMI-2 --primary --mode 1920x1080 --pos 0x0 --output HDMI-3 --mode 1920x1080 --pos 1920x0
+exec --no-startup-id xrandr --output HDMI-2 --primary --mode 1920x1080 --output HDMI-1 --mode 1920x1080 --left-of HDMI-2
+
+# Assign Workspace 1 to the Right Monitor (Main)
+workspace 1 output HDMI-2
+
+# Assign Workspace 2 to the Left Monitor
+workspace 2 output HDMI-1
