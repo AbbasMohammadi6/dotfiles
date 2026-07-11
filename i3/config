@@ -225,3 +225,6 @@ workspace 2 output HDMI-1
 
 # custom pretty notification daemon
 exec --no-startup-id dunst
+
+# launch resource monitor script
+exec --no-startup-id "$HOME/dotfiles/scripts/resource-monitor.sh"
