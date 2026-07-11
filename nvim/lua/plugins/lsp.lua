@@ -6,17 +6,25 @@ return {
   },
   config = function()
     require("mason").setup()
+
+    vim.lsp.config("ts_ls", {
+      init_options = {
+        -- Raise tsserver's heap limit (default ~3GB) so it can index large
+        -- monorepos like Metabase without silently failing on gd/gr.
+        -- Value is in MB.
+        maxTsServerMemory = 8192,
+      },
+    })
+
     require("mason-lspconfig").setup({
-      -- TODO: add something for css and styled-components
       ensure_installed = { "ts_ls", "tailwindcss", "emmet_language_server" },
       handlers = {
-        -- This default handler will be called for each installed server
         function(server_name)
-          vim.lsp.config(server_name, {})
           vim.lsp.enable(server_name)
         end,
-      }
+      },
     })
+
     vim.api.nvim_create_autocmd("LspAttach", {
       desc = "LSP actions",
       callback = function(event)
@@ -34,5 +42,5 @@ return {
         vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
       end,
     })
-  end
+  end,
 }
