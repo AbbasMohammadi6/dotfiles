@@ -11,7 +11,13 @@ return {
       mappings = {
         n = {
           ["q"] = "close",
-        }
+          ["<C-n>"] = "cycle_history_next",
+          ["<C-p>"] = "cycle_history_prev",
+        },
+        i = {
+          ["<C-n>"] = "cycle_history_next",
+          ["<C-p>"] = "cycle_history_prev",
+        },
       }
     }
   },
