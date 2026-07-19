@@ -6,6 +6,13 @@ return {
       find_files = {
         previewer = false,
       }
+    },
+    defaults = {
+      mappings = {
+        n = {
+          ["q"] = "close",
+        }
+      }
     }
   },
   keys = {
